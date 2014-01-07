@@ -8,8 +8,9 @@ var app = app || {};
 			'*filter': 'setFilter'
 		},
 
-		setFilter: function () {
+		setFilter: function (param) {
 			app.TodoFilter = param || '';
+
 			app.todos.trigger('filter');
 		}
 	});

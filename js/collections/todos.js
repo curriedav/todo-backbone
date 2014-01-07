@@ -8,7 +8,7 @@ var app = app || {};
 		localStorage: new Backbone.LocalStorage('todos-backbone'),
 		completed: function () {
 			return this.filter(function (todo) {
-				return. todo.get('completed');
+				return todo.get('completed');
 			});
 		},
 		remaining: function () {
@@ -25,5 +25,5 @@ var app = app || {};
 		}
 	});
 
-	app.todos = new Todo();
+	app.todos = new Todos();
 })();
